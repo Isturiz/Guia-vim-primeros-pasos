@@ -6,6 +6,8 @@
 
 ##### 1. [Iniciar vim desde la terminal](#1)
 ##### 2. [Salir de Vim / Neovim](#2)
+##### 3. [Moverse en el editor](#3)
+
 
 
 ### Iniciar vim desde la terminal<a name="1"></a>  
@@ -14,14 +16,14 @@ Vim: `vim`
 
 Neovim: `nvim`
 
-### Salir de Vim / Neovim
+### Salir de Vim / Neovim<a name="2"></a>  
 
 | Comando   | Acción |
 | :-----:   | :----: | 
 | `q`       | salir  | 
 | `q!`      | forzar salida (sin guardar) |
 
-### Moverse en el editor
+### Moverse en el editor<a name="3"></a> 
 
 | Comando   | Acción    |
 | :-----:   | :----:    | 
@@ -29,13 +31,11 @@ Neovim: `nvim`
 | `j`       |abajo      |
 | `k`       |arriba     |
 | `l`       |derecha    |
+| `w`       |siguiente  |
+| `l`       |anterior   |
 
-| Acción   | Comando    |
-| :-----:   | :----:    | 
-|        izquierda  |`h`|
-|        abajo      |`j`|
-|        arriba     |`k`|
-|        derecha    |`l`|
+
+
 
 ## Autor
 
