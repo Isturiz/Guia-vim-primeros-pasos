@@ -19,19 +19,20 @@ Neovim: `nvim`
 ### Salir de Vim / Neovim<a name="2"></a>  
 
 | Comando   | Acción |
-| :-----:   | :----: | 
+| :-----:   | :---- | 
 | `q`       | salir  | 
-| `q!`      | forzar salida (sin guardar) |
+| `q!`      | salir sin guardar |
 
 ### Moverse en el editor<a name="3"></a> 
 
 | Comando   | Acción    |
-| :-----:   | :----:    | 
+| :-----:   | :----    | 
 | `h`       |izquierda  |
 | `j`       |abajo      |
 | `k`       |arriba     |
 | `l`       |derecha    |
 | `w`       |siguiente  |
+| `e`       |final palabra  |
 | `l`       |anterior   |
 
 
