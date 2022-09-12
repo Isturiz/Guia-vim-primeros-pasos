@@ -2,43 +2,49 @@
 # Guía vim / nvim primeros pasos
 
 
-## Índice
+### Index
 
-##### 1. [Iniciar vim desde la terminal](#1)
-##### 2. [Salir de Vim / Neovim](#2)
-##### 3. [Moverse en el editor](#3)
+##### 1. [Start Vim / Neovim](#start)
+##### 2. [Exit Vim / Neovim](#exit)
+##### 3. [Modes](#modes)
+##### 4. [Move in the editor](#moveEditor)
+##### 5. [Move operators](#moveOperators)
 
-**modes: normal, insert.**
-### Modes
-1. Normal mode
-2. Insert mode
-3. Command mode
-4. Visual mode
+### Start Vim / Neovim<a name="start"></a>  
+| command | action       |
+| :-----: | :----:       | 
+| `vim`   | Start Vim    | 
+| `nvim`  | Start Neovim | 
 
-### Iniciar vim desde la terminal<a name="1"></a>  
+### Exit Vim / Neovim<a name="exit"></a>  
+| command   | action            |
+| :-----:   | :----:            | 
+| `q`       | quit              | 
+| `q!`      | quit without save |
 
-Vim: `vim`
+### Modes<a name="modes"></a>
+| command   | mode    |
+| :-----:   | :----:  |
+| `esc`     | normal  |
+| `i`       | insert  |
+| `:`       | command |
+| `v`       | visual  |
 
-Neovim: `nvim`
-
-### Salir de Vim / Neovim<a name="2"></a>  
-
-| Comando   | Acción |
-| :-----:   | :---- | 
-| `q`       | salir  | 
-| `q!`      | salir sin guardar |
-
-### Moverse en el editor<a name="3"></a> 
-
-| Comando   | Acción    |
-| :-----:   | :----    | 
+### Move in the editor<a name="moveEditor"></a> 
+| command   | action    |
+| :-----:   | :----:    |
 | `h`       |izquierda  |
 | `j`       |abajo      |
 | `k`       |arriba     |
 | `l`       |derecha    |
-| `w`       |next word  |
-| `e`       |end word  |
-| `b`       |back word  |
+
+### move operators
+| command   | action   |
+| :-----:   | :----:   |
+| `w`       | next word|
+| `e`       | end word |
+| `b`       | back     |
+
 
 ### Editar<a name="4"></a> 
 
@@ -89,7 +95,6 @@ también se pueden combinar con los operadores de movimiento
 
 | `number + d + operador de movimineto`     |elimina la cantidad de palabras especificadas en el number |
 
-esto es un test
 ### copy, cut and paste
 | command   | action   |
 | :-----:   | :---     |  
@@ -98,15 +103,9 @@ esto es un test
 | `x`       | cut      |
 | `dd`      | cut line |
 | `p`       | paste    |
-Los operadores de movimiento son 
--w
--e
--b
-
+**IMPORTANT NOTE**
+`delete` doesn't exist in Vim, use `cut` action
 Al utilizar, por ejemplo, d+d lo eliminado queda el la clipboard y con la letra `p` podemos pegar lo que allí se encuentre guardado en la línea de abajo o `shift+p` para pegar en la línea superior
-
-**NOTA SUPER IMPORTANTE:**
-En vim no existe el concepto de 'eliminar', todo lo que sea similar es simplemente la acción de 'cortar'
 
 `r` char replace
 `shift + r` reemplazar varios
@@ -136,9 +135,6 @@ luego de presionar `enter` para encontrar concurrencias podemos utilizar la letr
 `shift + o` añade línea arriba
 
 
-`v` para abrir el modo visual
-`y` para copiar
-`p` para pegar
 ## Autor
 
 - [@isturiz](https://www.github.com/isturiz)
