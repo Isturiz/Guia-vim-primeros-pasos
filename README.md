@@ -1,14 +1,13 @@
 
-# Guía vim / nvim primeros pasos
-
+# VIM / NEOVIM: The beginner's guide
 
 ### Index
 
-##### 1. [Start Vim / Neovim](#start)
-##### 2. [Exit Vim / Neovim](#exit)
-##### 3. [Modes](#modes)
-##### 4. [Move in the editor](#moveEditor)
-##### 5. [Move operators](#moveOperators)
+1. [Start Vim / Neovim](#start)
+2. [Exit Vim / Neovim](#exit)
+3. [Modes](#modes)
+4. [Move in the editor](#moveEditor)
+5. [Move operators](#moveOperators)
 
 ### Start Vim / Neovim<a name="start"></a>  
 | command | action       |
@@ -31,12 +30,12 @@
 | `v`       | visual  |
 
 ### Move in the editor<a name="moveEditor"></a> 
-| command   | action    |
-| :-----:   | :----:    |
-| `h`       |izquierda  |
-| `j`       |abajo      |
-| `k`       |arriba     |
-| `l`       |derecha    |
+| command   | action |
+| :-----:   | :----: |
+| `h`       |left    |
+| `j`       |down    |
+| `k`       |up      |
+| `l`       |right   |
 
 ### move operators
 | command   | action   |
