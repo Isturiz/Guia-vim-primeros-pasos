@@ -61,7 +61,7 @@
 
 ### delete in normal mode
 | Comando   | Acción    |
-| :-----:   | :----     | 
+| :-----:   | :----:    | 
 | `x`       |delete char|
 | `d+w`     |delete word|
 | `u`       |undo|
@@ -69,7 +69,7 @@
 
 ### delete line in normal mode
 | Comando   | Acción    |
-| :-----:   | :----     | 
+| :-----:   | :----:    | 
 | `d+d`     |elimina la línea|
 | `d+0`     |elimina todo lo de la izquierda|
 | `shift+d`     |elimina todo lo de la derecha|
