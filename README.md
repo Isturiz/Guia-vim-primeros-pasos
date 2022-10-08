@@ -23,8 +23,6 @@ number + j = salto de línea relativo
 | `vim`   | Start Vim    |
 | `nvim`  | Start Neovim |
 
-
-
 ### Exit Vim / Neovim<a name="exit"></a>  
 | command   | action            |
 | :-----:   | :----:            |
