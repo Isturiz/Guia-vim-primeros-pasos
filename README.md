@@ -58,7 +58,7 @@ number + j = salto de línea relativo
 | `I`       |insert to start of the current line|
 | `a`       |insert to right
 | `A`       |insert to end of the current line|
-|
+
 ### timeline in normal mode
 | Comando   | Acción    |
 | :-----:   | :----:    |
