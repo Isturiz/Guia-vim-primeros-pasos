@@ -10,7 +10,6 @@ number + j = salto de línea relativo
 * [Move in the editor](#moveEditor)
 * [Move operators](#moveOperators)
 
-
 ### Start Vim / Neovim<a name="start"></a>  
 | command | action       |
 | :-----: | :----:       |
