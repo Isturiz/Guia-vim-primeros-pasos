@@ -3,22 +3,32 @@
 number + j = salto de línea relativo
 ### Index
 
-* [Start Vim / Neovim](#start)
-* [Exit Vim / Neovim](#exit)
+* [Start, save and exit](#sse)
+	* [Start Vim / Neovim](#start)
+	* [Exit Vim / Neovim](#exit)
 * [Modes](#modes)
 * [Move in the editor](#moveEditor)
 * [Move operators](#moveOperators)
 
+
 ### Start Vim / Neovim<a name="start"></a>  
 | command | action       |
-| :-----: | :----:       | 
-| `vim`   | Start Vim    | 
-| `nvim`  | Start Neovim | 
+| :-----: | :----:       |
+| `vim`   | Start Vim    |
+| `nvim`  | Start Neovim |
+
+### Save Vim / Neovim<a name="save"></a>  
+| command | action       |
+| :-----: | :----:       |
+| `vim`   | Start Vim    |
+| `nvim`  | Start Neovim |
+
+
 
 ### Exit Vim / Neovim<a name="exit"></a>  
 | command   | action            |
-| :-----:   | :----:            | 
-| `q`       | quit              | 
+| :-----:   | :----:            |
+| `q`       | quit              |
 | `q!`      | quit without save |
 
 ### Modes<a name="modes"></a>
@@ -55,10 +65,10 @@ number + j = salto de línea relativo
 ### timeline in normal mode
 | Comando   | Acción    |
 | :-----:   | :----:    |
-| `g+d`       |ir a la definición de la variable| d = definition
-| `g+f`       |ir a al archivo | d = definition
-| `ctrl+o`       |acción anterior| o = older
-| `ctrl+i`       |acción posterior |
+| `g+d`     |ir a la definición de la variable| d = definition
+| `g+f`     |ir a al archivo | d = definition
+| `ctrl+o`  |acción anterior| o = older
+| `ctrl+i`  |acción posterior |
 
 ### delete in normal mode
 | Comando   | Acción    |
