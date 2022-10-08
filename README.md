@@ -44,9 +44,9 @@ number + j = salto de línea relativo
 | `e`       | end word  |
 | `b`       | back      |
 
-### Insert mode<a name="7"></a> 
+### Insert mode<a name="7"></a>
 | Comando   | Acción    |
-| :-----:   | :----:    | 
+| :-----:   | :----:    |
 | `i`       |insert to left|
 | `I`       |insert to start of the current line|
 | `a`       |insert to right
@@ -54,7 +54,7 @@ number + j = salto de línea relativo
 |
 ### timeline in normal mode
 | Comando   | Acción    |
-| :-----:   | :----:    | 
+| :-----:   | :----:    |
 | `g+d`       |ir a la definición de la variable| d = definition
 | `g+f`       |ir a al archivo | d = definition
 | `ctrl+o`       |acción anterior| o = older
