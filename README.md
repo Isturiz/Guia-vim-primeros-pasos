@@ -5,31 +5,30 @@ number + j = salto de línea relativo
 
 * [Start, save and exit](#sse)
 	* [Start Vim / Neovim](#start)
-	* [Exit Vim / Neovim](#exit)
+	* [Exit Vim / Neovim](#saveAndExit)
 * [Modes](#modes)
 * [Move in the editor](#moveEditor)
 * [Move operators](#moveOperators)
 
-### Start Vim / Neovim<a name="start"></a>
+### Start, save and exit<a name="sse"></a>
+
+#### Start Vim / Neovim<a name="start"></a>
 
 | command | action       |
 | :-----: | :----:       |
 | `vim`   | Start Vim    |
 | `nvim`  | Start Neovim |
 
-### Save Vim / Neovim<a name="save"></a>  
-| command | action       |
-| :-----: | :----:       |
-| `vim`   | Start Vim    |
-| `nvim`  | Start Neovim |
+#### Save and exit Vim / Neovim<a name="saveAndExit"></a>  
 
-### Exit Vim / Neovim<a name="exit"></a>  
-| command   | action            |
-| :-----:   | :----:            |
-| `q`       | quit              |
-| `q!`      | quit without save |
+| command    | action            |
+| :-----:    | :----:            |
+| `:w`       | save              |
+| `:q`       | quit              |
+| `:q!`      | quit without save |
 
 ### Modes<a name="modes"></a>
+
 | command   | mode    |
 | :-----:   | :----:  |
 | `esc`     | normal  |
