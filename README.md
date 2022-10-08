@@ -1,5 +1,6 @@
 # VIM / NEOVIM: The beginner's guide
 
+number + j = salto de línea relativo
 ### Index
 
 * [Start Vim / Neovim](#start)
