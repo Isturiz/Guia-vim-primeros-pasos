@@ -4,9 +4,10 @@ number + j = salto de línea relativo
 ### Index
 
 * [Start, save and exit](#sse)
-	* [Start Vim / Neovim](#start)
-	* [Exit Vim / Neovim](#saveAndExit)
+  * [Start Vim / Neovim](#start)
+  * [Exit Vim / Neovim](#saveAndExit)
 * [Modes](#modes)
+  * [Normal mode](#normalMode)
 * [Move in the editor](#moveEditor)
 * [Move operators](#moveOperators)
 
@@ -27,39 +28,40 @@ number + j = salto de línea relativo
 | `:q`       | quit              |
 | `:q!`      | quit without save |
 
-### Modes<a name="modes"></a>
-
-| command   | mode    |
-| :-----:   | :----:  |
-| `esc`     | normal  |
-| `i`       | insert  |
-| `:`       | command |
-| `v`       | visual  |
-
-### Move in the editor<a name="moveEditor"></a> 
-| command   | action |
-| :-----:   | :----: |
-| `h`       |left    |
-| `j`       |down    |
-| `k`       |up      |
-| `l`       |right   |
 
 ### Move operators
 | command   | action    |
 | :-----:   | :----:    |
+| `h`       | left      |
+| `j`       | down      |
+| `k`       | up        |
+| `l`       | right     |
 | `w`       | next word |
 | `e`       | end word  |
-| `b`       | back      |
+| `b`       | back word |
 
-### Insert mode<a name="7"></a>
-| Comando   | Acción    |
-| :-----:   | :----:    |
-| `i`       |insert to left|
-| `I`       |insert to start of the current line|
-| `a`       |insert to right
-| `A`       |insert to end of the current line|
+### Modes<a name="modes"></a>
 
-### timeline in normal mode
+| command    | mode         |
+| :-----:    | :----:       |
+| `esc`      | normal       |
+| `i`        | insert       |
+| `:`        | command      |
+| `v`        | visual       |
+| `shift + v`| visual line  |
+| `ctrl + v` | visual block |
+
+
+#### Insert mode<a name="7"></a>
+
+| Comando   | Acción                              |
+| :-----:   | :----:                              |
+| `i`       | insert to left                      |
+| `I`       | insert to start of the current line |
+| `a`       | insert to right                     |
+| `A`       | insert to end of the current line   |
+
+### timeline in normal mode<a name="normalMode"></a>
 | Comando   | Acción    |
 | :-----:   | :----:    |
 | `g+d`     |ir a la definición de la variable| d = definition
