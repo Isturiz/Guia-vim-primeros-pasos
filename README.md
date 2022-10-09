@@ -1,7 +1,5 @@
 # VIM / NEOVIM: The beginner's guide
 
-number + j = salto de línea relativo
-
 ## Table of Contents
 
 - [Start, save and exit](#sse)
@@ -11,7 +9,6 @@ number + j = salto de línea relativo
 - [Modes](#modes)
   - [Normal mode](#normalMode)
   - [Insert mode](#insertMode)
-- [Move in the editor](#moveEditor)
 - [Move operators](#moveOperators)
 
 ### Start, save and exit<a name="sse"></a>
