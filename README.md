@@ -31,8 +31,8 @@ number + j = salto de línea relativo
 | `:q`       | quit              |
 | `:q!`      | quit without save |
 
-
 ### Move operators<a name="moveOperators"></a> 
+
 | command   | action    |
 | :-----:   | :----:    |
 | `h`       | left      |
@@ -92,6 +92,8 @@ For example:
 | `c + i + w`  | change word                  |
 | `d + w`      | delete word                  |
 | `d + b`      | delete back word             |
+| `d + 0`      | delete                       |
+| `shift + d`  | delete                       |
 
 ##### copy, cut and paste
 
@@ -108,11 +110,11 @@ For example:
 
 ##### undo and redo
 
-| Comando   | Acción    |
-| :-----:   | :----:    |
-| `d+w`     |delete word|
-| `u`       |undo|
-| `ctrl+r`  |redo|
+| Comando   | Acción      |
+| :-----:   | :----:      |
+| `d+w`     | delete word |
+| `u`       | undo        |
+| `ctrl+r`  | redo        |
 
 ##### start or end of document
 
@@ -141,24 +143,16 @@ For example:
 | `a`       | insert to right                     |
 | `A`       | insert to end of the current line   |
 
-### delete line in normal mode
+#### Command mode<a name="commandMode"></a>
 
-| Comando   | Acción    |
-| :-----:   | :----:    |
-| `d+d`     |elimina la línea|
-| `d+0`     |elimina todo lo de la izquierda|
-| `shift+d`     |elimina todo lo de la derecha|
-| `d+shift+4`  |eliminar desde el cursor hasta el final de la línea (no elimina la línea)|
-shift+d y d+shift+4 son iguales
-est
-| `number + d + operador de movimineto`     |elimina la cantidad de palabras especificadas en el number |
+##### Search 
 
-`/ + texto` busca hacia adelante
-`? + texto` busca hacia atrás
-**nota:** solo en vim, en neovim ambas funcionan igual y buscan todas las coincidencias
-luego de presionar `enter` para encontrar concurrencias podemos utilizar la letra `n` para ir a la siguiente concurrencia o `shift + n` para la concurrencia anterior
-
-
+| Comando     | Acción         |
+| :-----:     | :----:         |
+| `:/ + text`  | search to next |
+| `:? + text`  | search to back |
+| `n`         | search next    |
+| `shift + n` | search next    |
 
 #### Comand mode
 
@@ -167,7 +161,7 @@ luego de presionar `enter` para encontrar concurrencias podemos utilizar la letr
 :%s/texto a reemplazar/texto nuevo -> reemplaza todas las concurrencias de lal archivo
 
 
-## Autor
+### Autor
 
 - [@isturiz](https://www.github.com/isturiz)
 
