@@ -56,17 +56,83 @@ number + j = salto de línea relativo
 
 #### Normal mode<a name="normalMode"></a>
 
+##### Main actions
+
+| command     | action          |
+| :-----:     | :---:           |
+| `%`         | go to pair      |
+| `o`         | new line        |
+| `shift + o` | new above line  |
+| `r`         | replace char    |
+| `shift + r` | replace several |
+| `%`         | go to pair |
+| `%`         | go to pair |
+| `%`         | go to pair |
+
+##### Numbers operations
+
+You can combine the numbers and move operators.
+For example:
+
+| command              | action                       |
+| :-----:              | :---:                        |
+| `number + j`         | go to next relative line     |
+| `number + k`         | go to previous relative line |
+| `number + shift + g` | go to line                   |
+| `number + w`         | go to word                   |
+| `number + d + w`     | delete number of word        |
+
+##### Action operations
+
+You can combine the move and action operators.
+For example:
+
+| command      | action                       |
+| :-----:      | :---:                        |
+| `c + i + w`  | change word                  |
+| `d + w`      | delete word                  |
+| `d + b`      | delete back word             |
+
 ##### copy, cut and paste
 
-| command   | action   |
-| :-----:   | :---     |
-| `y`       | copy     |
-| `yy`      | copy line|
-| `x`       | cut      |
-| `dd`      | cut line |
-| `p`       | paste    |
+**Note:** delete action don't exist in Vim, for this use the cut action
+
+| command     | action             |
+| :-----:     | :---               |
+| `y`         | copy               |
+| `yy`        | copy line          |
+| `x`         | cut                |
+| `dd`        | cut line           |
+| `p`         | paste              |
+| `shift + p` | paste above line   |
+
+##### undo and redo
+
+| Comando   | Acción    |
+| :-----:   | :----:    |
+| `d+w`     |delete word|
+| `u`       |undo|
+| `ctrl+r`  |redo|
+
+##### start or end of document
+
+| Comando   | Acción            |
+| :-----:   | :----:            |
+| `g+g`     | start of document |
+| `shift+g` | end of document   |
+
+##### timeline
+
+| Comando   | Acción    |
+| :-----:   | :----:    |
+| `g+d`     | go to definition | d = definition
+| `g+f`     | go to file       | d = definition
+| `ctrl+o`  | acción anterior| o = older
+| `ctrl+i`  |acción posterior |
 
 #### Insert mode<a name="insertMode"></a>
+
+##### Enter to insert mode
 
 | Comando   | Acción                              |
 | :-----:   | :----:                              |
@@ -75,23 +141,8 @@ number + j = salto de línea relativo
 | `a`       | insert to right                     |
 | `A`       | insert to end of the current line   |
 
-### timeline in normal mode<a name="normalMode"></a>
-| Comando   | Acción    |
-| :-----:   | :----:    |
-| `g+d`     |ir a la definición de la variable| d = definition
-| `g+f`     |ir a al archivo | d = definition
-| `ctrl+o`  |acción anterior| o = older
-| `ctrl+i`  |acción posterior |
-
-### delete in normal mode
-| Comando   | Acción    |
-| :-----:   | :----:    |
-| `x`       |delete char|
-| `d+w`     |delete word|
-| `u`       |undo|
-| `ctrl+r`  |redo|
-
 ### delete line in normal mode
+
 | Comando   | Acción    |
 | :-----:   | :----:    |
 | `d+d`     |elimina la línea|
@@ -99,37 +150,14 @@ number + j = salto de línea relativo
 | `shift+d`     |elimina todo lo de la derecha|
 | `d+shift+4`  |eliminar desde el cursor hasta el final de la línea (no elimina la línea)|
 shift+d y d+shift+4 son iguales
-
-también se pueden combinar con los operadores de movimiento
-| Comando   | Acción    |
-| :-----:   | :----     |
-| `d+w`     |elimina |
-| `d+e`     |elimina |
-| `d+b`     |elimina |
-
+est
 | `number + d + operador de movimineto`     |elimina la cantidad de palabras especificadas en el number |
-
-
-**IMPORTANT NOTE**
-`delete` doesn't exist in Vim, use `cut` action
-Al utilizar, por ejemplo, d+d lo eliminado queda el la clipboard y con la letra `p` podemos pegar lo que allí se encuentre guardado en la línea de abajo o `shift+p` para pegar en la línea superior
-
-`r` char replace
-`shift + r` reemplazar varios
-`c+w` change word desde donde está el puntero
-`c + i + w` cambia la palabra completa
-
-
-`g+g` va al inicio del archivo
-`shift + g` va al final
-`number + shift + g` va a la línea especificada 
 
 `/ + texto` busca hacia adelante
 `? + texto` busca hacia atrás
 **nota:** solo en vim, en neovim ambas funcionan igual y buscan todas las coincidencias
 luego de presionar `enter` para encontrar concurrencias podemos utilizar la letra `n` para ir a la siguiente concurrencia o `shift + n` para la concurrencia anterior
 
-`%` para ir al parentesis par
 
 
 #### Comand mode
@@ -137,9 +165,6 @@ luego de presionar `enter` para encontrar concurrencias podemos utilizar la letr
 :s/texto a reemplazar/texto nuevo /g -> en caso de querer reemplazar todas las concurrencias de la línea.
 
 :%s/texto a reemplazar/texto nuevo -> reemplaza todas las concurrencias de lal archivo
-
-`o` añade una nueva línea abajo
-`shift + o` añade línea arriba
 
 
 ## Autor
