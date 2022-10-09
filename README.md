@@ -1,15 +1,18 @@
 # VIM / NEOVIM: The beginner's guide
 
 number + j = salto de línea relativo
-### Index
 
-* [Start, save and exit](#sse)
-  * [Start Vim / Neovim](#start)
-  * [Exit Vim / Neovim](#saveAndExit)
-* [Modes](#modes)
-  * [Normal mode](#normalMode)
-* [Move in the editor](#moveEditor)
-* [Move operators](#moveOperators)
+## Table of Contents
+
+- [Start, save and exit](#sse)
+  - [Start Vim / Neovim](#start)
+- [Move operators](#moveOperators)
+  - [Save and exit Vim / Neovim](#saveAndExit)
+- [Modes](#modes)
+  - [Normal mode](#normalMode)
+  - [Insert mode](#insertMode)
+- [Move in the editor](#moveEditor)
+- [Move operators](#moveOperators)
 
 ### Start, save and exit<a name="sse"></a>
 
@@ -29,7 +32,7 @@ number + j = salto de línea relativo
 | `:q!`      | quit without save |
 
 
-### Move operators
+### Move operators<a name="moveOperators"></a> 
 | command   | action    |
 | :-----:   | :----:    |
 | `h`       | left      |
@@ -51,8 +54,19 @@ number + j = salto de línea relativo
 | `shift + v`| visual line  |
 | `ctrl + v` | visual block |
 
+#### Normal mode<a name="normalMode"></a>
 
-#### Insert mode<a name="7"></a>
+##### copy, cut and paste
+
+| command   | action   |
+| :-----:   | :---     |
+| `y`       | copy     |
+| `yy`      | copy line|
+| `x`       | cut      |
+| `dd`      | cut line |
+| `p`       | paste    |
+
+#### Insert mode<a name="insertMode"></a>
 
 | Comando   | Acción                              |
 | :-----:   | :----:                              |
@@ -71,7 +85,7 @@ number + j = salto de línea relativo
 
 ### delete in normal mode
 | Comando   | Acción    |
-| :-----:   | :----:    | 
+| :-----:   | :----:    |
 | `x`       |delete char|
 | `d+w`     |delete word|
 | `u`       |undo|
@@ -79,7 +93,7 @@ number + j = salto de línea relativo
 
 ### delete line in normal mode
 | Comando   | Acción    |
-| :-----:   | :----:    | 
+| :-----:   | :----:    |
 | `d+d`     |elimina la línea|
 | `d+0`     |elimina todo lo de la izquierda|
 | `shift+d`     |elimina todo lo de la derecha|
@@ -88,21 +102,14 @@ shift+d y d+shift+4 son iguales
 
 también se pueden combinar con los operadores de movimiento
 | Comando   | Acción    |
-| :-----:   | :----     | 
+| :-----:   | :----     |
 | `d+w`     |elimina |
 | `d+e`     |elimina |
 | `d+b`     |elimina |
 
 | `number + d + operador de movimineto`     |elimina la cantidad de palabras especificadas en el number |
 
-### copy, cut and paste
-| command   | action   |
-| :-----:   | :---     |  
-| `y`       | copy     |
-| `yy`      | copy line|
-| `x`       | cut      |
-| `dd`      | cut line |
-| `p`       | paste    |
+
 **IMPORTANT NOTE**
 `delete` doesn't exist in Vim, use `cut` action
 Al utilizar, por ejemplo, d+d lo eliminado queda el la clipboard y con la letra `p` podemos pegar lo que allí se encuentre guardado en la línea de abajo o `shift+p` para pegar en la línea superior
